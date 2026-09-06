@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: dsproject
+
+  thymeleaf:
+    cache: false
+    enable-spring-el-compiler: true
+    prefix: classpath:/templates/
+    suffix: .html
+
+  datasource:
+    dbcp2:
+      driver-class-name: org.h2.Driver
+      url: jdbc:h2:mem:bootapp;DB_CLOSE_DELAY = -1
+      username: sa
+      password:
